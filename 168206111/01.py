@@ -1,4 +1,3 @@
-# -*- coding: utf-11 -*- 
 def f(s,arr):
     if len(arr) == 1:
         return 0 if s == arr[0] else -100 # 4
@@ -11,8 +10,7 @@ def f(s,arr):
         return mid + f(s,arr[mid:])
     else:
         return f(s,arr[0:mid])
-#测试----------------------------------
-list = range(1,12,2)#包含从1到12（不包括12）的有序列表,间隔2
+list = range(1,12,2)
 for x in range(0,12):
     num = f(x,list)
     if num >= 0 :
